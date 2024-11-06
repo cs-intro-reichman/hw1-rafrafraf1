@@ -22,17 +22,12 @@ public class TimeFormat {
 				hours -= 12;
 		}
 
-		String hourCoefficient = "";
-		if (hours < 10) {
-			hourCoefficient = "0";
-		}
-
 		String minuteCoefficient = "";
 		if (minutes < 10) {
 			minuteCoefficient = "0";
 		}
 
-		System.out.println(hourCoefficient + hours + ":" + minuteCoefficient + minutes + ampm);
+		System.out.println(hours + ":" + minuteCoefficient + minutes + ampm);
 
 
 	}
