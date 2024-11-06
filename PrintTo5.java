@@ -5,5 +5,8 @@ public class PrintTo5 {
 		// Declares an int variable, and sets it to 1
         int i = 0;
         // Complete the program's code here:
+        for (int x = 0; x < 6; x++) {
+            System.out.println(x);
+        }
     }
  }

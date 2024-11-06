@@ -4,24 +4,26 @@ public class Ascend {
 	public static void main(String[] args) {
 		// Replace this comment with your code
 		Random random = new Random();
-		int lim = 100;
+		int lim = Integer.parseInt(args[0]);
 
 		int a = random.nextInt(lim);
 		int b = random.nextInt(lim);
 		int c = random.nextInt(lim);
-		System.out.println("num1: " + a + "\nnum2: " + b + "\nnum3: " + c);
+		System.out.println(a + " " + b + " " + c);
 		
 		// get the smaller num between a and b, then get the larger one
-		int sab = Math.min(a,b);
+		int sab = Math.min(a, b);
 		int lab = Math.max(a, b);
 
-		// get the smallest between s1 and c, this must be the smallest of the 3 numbers
+		// get the smallest between sab and c, this must be the smallest of the 3 numbers
 		int smallest = Math.min(sab, c);
 		
-		// get the rest i guess
-		int middle = Math.min(lab, c);
+		// get the largest the same way essentially
 		int largest = Math.max(lab, c);
 
-		System.out.println("\nascending order:\nnum1: " + smallest + "\nnum2: " + middle + "\nnum3: " + largest);
+		// the middle must therefore be the sum of the 3 numbers subtracted by the sum of the smallest and largest 
+		int middle = a + b + c - (smallest + largest); 
+
+		System.out.println(smallest + " " + middle + " " + largest);
 	}
 }
