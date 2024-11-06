@@ -18,7 +18,7 @@ public class Ascend {
 		// get the smallest between s1 and c, this must be the smallest of the 3 numbers
 		int smallest = Math.min(sab, c);
 		
-		// get the 
+		// get the rest i guess
 		int middle = Math.min(lab, c);
 		int largest = Math.max(lab, c);
 
