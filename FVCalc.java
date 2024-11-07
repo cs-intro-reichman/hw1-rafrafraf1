@@ -7,6 +7,6 @@ public class FVCalc {
 
 		double futureValue = cash * Math.pow((1 + (interest/100)), duration);
 
-		System.out.println("After " + duration + " years, a $" + cash + " saved at " + interest + "%25 will yield $" + (int) futureValue);
+		System.out.println("After " + duration + " years, a $" + cash + " saved at " + interest + "% will yield $" + (int) futureValue);
 	}
 }
